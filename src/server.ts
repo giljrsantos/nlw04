@@ -1,17 +1,14 @@
+import 'reflect-metadata';
 import express from 'express';
+import './database';
+import { router } from './routes';
 
 const PORT = 3333;
 
 const app = express();
 
-app.get('/', (req, res) => {
-    return res.json({message: `Hello world - NLW#`});
-});
+app.use(express.json());
 
-app.post('/', (req, res) => {
-    return res.json({message: `Os dados foram salvos com sucesso!`})
-});
+app.use(router);
 
 app.listen(PORT, () => console.log(`Server is running! PORT: ${PORT}`));
-
-
