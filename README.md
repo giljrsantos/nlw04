@@ -15,14 +15,29 @@
         "@types/uuid": "^8.3.0",
     }
 
-## AULA 2 Iniciando com Banco de Dados - 23/02/2021
-Criando Banco de Dados SQLITE;
+## AULA 2 - Iniciando com Banco de Dados - 23/02/2021
+    Criando Banco de Dados SQLITE;
 
-Conhecimento as formas de trabalhar com banco de dados na aplicação
+    Conhecimento as formas de trabalhar com banco de dados na aplicação
 
-Configurar o TypeORM na aplicação
+    Configurar o TypeORM na aplicação
 
-Criando migration do usuário
+    Criando migration do usuário
 
 
+## AULA 3 - Testando a nossa aplicação
+    Refatorando o controller
+        Criando um repository do usuário.
+        Alterando no controller para o repository criado.
+    Criando migration de pesquisas(survey);
+    Criando repository de pesquisas
+    Criando controller de pesquisas
+    Criando o primeiro teste
+
+### Testes Automatizados
+    1 - Testes unitários
+    2 - Testes de integração
+
+    -> request -> routes -> controller -> repository
+    <- repository <- controller <- response
 
